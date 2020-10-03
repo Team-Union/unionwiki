@@ -727,7 +727,7 @@ def main_file(data = None):
 
 # Error page
 @app.errorhandler(403)
-def main_error_503(e):
+def main_error_403(e):
     return main_error_403_2(conn)
 @app.errorhandler(503)
 def main_error_503(e):
