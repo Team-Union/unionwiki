@@ -6,7 +6,7 @@ https://github.com/2du/openNAMU
 [![라이선스](https://img.shields.io/badge/license-BSD%203--Clause-lightgrey.svg)](./LICENSE)
 
 
-오픈나무는 파이썬 기반의 위키 엔진입니다.
+TheEnd는 파이썬 기반의 위키 엔진입니다.
 
 ### 목차
  * [시작하기](#시작하기)
@@ -16,7 +16,7 @@ https://github.com/2du/openNAMU
  * [기타](#기타)
 
 ## 시작하기
-는 파이썬 환경에서 동작하는 파이썬 애플리케이션으로, 파이썬 환경을 필요로 합니다.
+TheEnd는 파이썬 환경에서 동작하는 파이썬 애플리케이션으로, 파이썬 환경을 필요로 합니다.
 
 [여기](https://2du.pythonanywhere.com/w/설치법)를 눌러 설치 가이드를 볼 수 있습니다.
 
