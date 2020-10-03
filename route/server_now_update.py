@@ -29,7 +29,7 @@ def server_now_update_2(conn, r_ver):
                 print('Error : update failed')
         elif platform.system() == 'Windows':
             os.system('rd /s /q route')
-            urllib.request.urlretrieve('https://github.com//TeamEnd/archive/' + up_data + '.zip', 'update.zip')
+            urllib.request.urlretrieve('https://github.com/TeamEnd/endwiki/archive/main' '.zip', 'update.zip')
             zipfile.ZipFile('update.zip').extractall('')
             ok = os.system('xcopy /y /s /r opennamu-' + up_data + ' .')
             if ok == 0:
