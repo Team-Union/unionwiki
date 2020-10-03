@@ -726,16 +726,33 @@ def main_file(data = None):
     return main_file_2(conn, data)
 
 # Error page
+@app.errorhandler(400)
+def main_error_404(e):
+    return main_error_400_2(conn)
+    
 @app.errorhandler(403)
 def main_error_403(e):
     return main_error_403_2(conn)
-@app.errorhandler(503)
-def main_error_503(e):
-    return main_error_503_2(conn)
 
 @app.errorhandler(404)
 def main_error_404(e):
     return main_error_404_2(conn)
+
+@app.errorhandler(429)
+def main_error_429(e):
+    return main_error_429_2(conn)
+
+@app.errorhandler(500)
+def main_error_504(e):
+    return main_error_500_2(conn)
+
+@app.errorhandler(503)
+def main_error_503(e):
+    return main_error_503_2(conn)
+
+@app.errorhandler(504)
+def main_error_504(e):
+    return main_error_504_2(conn)
 # END
 app.secret_key = rep_key
 app.wsgi_app = werkzeug.debug.DebuggedApplication(app.wsgi_app, True)
