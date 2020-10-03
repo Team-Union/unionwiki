@@ -1,5 +1,5 @@
 from .tool.func import *
-from . import main_error_404
+from . import main_error
 
 def main_file_2(conn, data):
     curs = conn.cursor()
@@ -19,4 +19,4 @@ def main_file_2(conn, data):
             else:
                 return flask.send_from_directory('./', data, mimetype = 'text/xml')
 
-    return main_error_404.main_error_404_2(conn)
+    return main_error.main_error_404_2(conn)
