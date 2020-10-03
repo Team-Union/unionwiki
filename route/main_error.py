@@ -22,6 +22,15 @@ def main_error_404_2(conn):
         return open('404.html', encoding='utf8').read()
     else:
         return redirect('/w/' + url_pas(wiki_set(2)))
+
+def main_error_410_2(conn):
+    curs = conn.cursor()
+
+    if os.path.exists('410.html') and flask.request.path != '/':
+        return open('410.html', encoding='utf8').read()
+    else:
+        return redirect('/w/' + url_pas(wiki_set(2)))
+
 def main_error_429_2(conn):
     curs = conn.cursor()
 
