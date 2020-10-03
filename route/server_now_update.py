@@ -31,9 +31,9 @@ def server_now_update_2(conn, r_ver):
             os.system('rd /s /q route')
             urllib.request.urlretrieve('https://github.com/TeamEnd/endwiki/archive/main' '.zip', 'update.zip')
             zipfile.ZipFile('update.zip').extractall('')
-            ok = os.system('xcopy /y /s /r opennamu-' + up_data + ' .')
+            ok = os.system('xcopy /y /s /r endwiki-' + 'main' + ' .')
             if ok == 0:
-                os.system('rd /s /q opennamu-' + up_data)
+                os.system('rd /s /q endwiki-' + 'main')
                 os.system('del update.zip')
 
                 return redirect('/restart')
