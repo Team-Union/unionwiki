@@ -1,7 +1,7 @@
 ## Environment (환경)
 * OS :
 * Python version :
-* openNAMU version :
+* endwiki version :
 * Skin : 
 * Skin version : 
 
