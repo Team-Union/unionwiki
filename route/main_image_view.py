@@ -1,5 +1,5 @@
 from .tool.func import *
-from . import main_error
+from . import main_error_404
 
 def main_image_view_2(conn, name, app_var):
     curs = conn.cursor()
@@ -11,4 +11,4 @@ def main_image_view_2(conn, name, app_var):
             mimetype = 'image/' + mime_type.group(1).lower()
         )
     else:
-        return main_error.main_error_404_2(conn)
+        return main_error_404.main_error_404_2(conn)

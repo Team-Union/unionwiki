@@ -22,9 +22,9 @@ def api_skin_info_2(conn, name):
     else:
         a_data = {}
         d_link_data = {
-            "ACME" : "https://raw.githubusercontent.com/openNAMU/openNAMU-Skin-ACME/master/info.json",
-            "Liberty" : "https://raw.githubusercontent.com/openNAMU/openNAMU-Skin-Liberty/master/info.json",
-            "Before Namu" : "https://raw.githubusercontent.com/openNAMU/openNAMU-Skin-Before_Namu/master/info.json"
+            "ACME": "https://raw.githubusercontent.com/endwiki/endwiki-Skin-ACME/master/info.json",
+            "Liberty": "https://raw.githubusercontent.com/endwiki/endwiki-Skin-Liberty/master/info.json",
+            "Before Namu": "https://raw.githubusercontent.com/endwiki/endwiki-Skin-Before_Namu/master/info.json"
         }
 
         for i in load_skin(skin_check(1), 1):

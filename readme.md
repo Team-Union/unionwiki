@@ -1,6 +1,6 @@
 [(en-US)](./readme-en.md) | [(ko-KR)](./readme.md)
 # 오리지널 소스코드
-https://github.com/2du/openNAMU
+https://github.com/TeamEND/endwiki
 
 # The End
 
@@ -35,7 +35,7 @@ TheEnd 프로젝트는 [BSD 3-Clause License](./LICENSE)의 보호를 받고 있
  * Syntax highlighting - [highlightjs](https://highlightjs.org/)
  * Numerical expression - [MathJax](https://www.mathjax.org/)
  * Handling Keyboard Shortcuts [shortcut.js](http://www.openjs.com/scripts/events/keyboard_shortcuts/)
- * https://github.com/2du/openNAMU
+ * https://github.com/TeamEND/endwiki
 
 ## 지원 문법
  * 나무마크 (NamuMark)

@@ -4,6 +4,11 @@ import datetime
 import html
 import re
 
+end_data = ''
+plus_data = ''
+nowiki_num = ''
+include_name = ''
+
 def nowiki_js(data):
     data = data.replace('\\', '\\\\')
     data = data.replace('"', '\\"')
@@ -1173,9 +1178,9 @@ def namumark(conn, data, title, include_num):
         else:
             break
 
-    if re.search(r'\[pagecount\]', data, flags = re.I):
+    if re.search(r'\[pagecount(?:\([^()]+\))?\]', data, flags = re.I):
         plus_data += 'page_count();\n'
-        data = re.sub(r'\[pagecount\]', '<span class="all_page_count"></span>', data, flags = re.I)
+        data = re.sub(r'\[pagecount(?:\([^()]+\))?\]', '<span class="all_page_count"></span>', data, flags = re.I)
 
     data = re.sub(r'\[date\]', now_time, data, flags = re.I)
     data = re.sub(r'\[clearfix\]', '<div style="clear:both"></div>', data, flags = re.I)
