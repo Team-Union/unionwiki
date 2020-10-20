@@ -20,7 +20,7 @@ def server_now_update_2(conn, r_ver):
             ok = []
 
             ok += [os.system('git remote rm origin')]
-            ok += [os.system('git remote add origin https://github.com/TeamEnd/endwiki.git')]
+            ok += [os.system('git remote add origin https://github.com/2DU/opennamu.git')]
             ok += [os.system('git fetch origin ' + up_data)]
             ok += [os.system('git reset --hard origin/' + up_data)]
             if (ok[0] and ok[1] and ok[2] and ok[3]) == 0:
@@ -29,11 +29,11 @@ def server_now_update_2(conn, r_ver):
                 print('Error : update failed')
         elif platform.system() == 'Windows':
             os.system('rd /s /q route')
-            urllib.request.urlretrieve('https://github.com/TeamEnd/endwiki/archive/main' '.zip', 'update.zip')
+            urllib.request.urlretrieve('https://github.com/2DU/opennamu/archive/' + up_data + '.zip', 'update.zip')
             zipfile.ZipFile('update.zip').extractall('')
-            ok = os.system('xcopy /y /s /r endwiki-' + 'main' + ' .')
+            ok = os.system('xcopy /y /s /r opennamu-' + up_data + ' .')
             if ok == 0:
-                os.system('rd /s /q endwiki-' + 'main')
+                os.system('rd /s /q opennamu-' + up_data)
                 os.system('del update.zip')
 
                 return redirect('/restart')
@@ -50,7 +50,7 @@ def server_now_update_2(conn, r_ver):
                     <li>''' + load_lang('version') + ' : ' + r_ver + '''</li>
                     <li id="ver_send" style="display: none;">''' + load_lang('lastest') + ''' : </li>
                 </ul>
-                <a href="https://github.com/TeamEND/endwiki">(Beta)</a> <a href="https://github.com/TeamEND/endwiki/tree/main">(Stable)</a>
+                <a href="https://github.com/2du/openNAMU">(Beta)</a> <a href="https://github.com/2du/openNAMU/tree/stable">(Stable)</a>
                 <hr class=\"main_hr\">
                 <form method="post">
                     <button type="submit">''' + load_lang('update') + '''</button>
