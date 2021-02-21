@@ -1,6 +1,6 @@
 [(en-US)](./readme-en.md) | [(ko-KR)](./readme.md)
 # 오리지널 소스코드
-https://github.com/TeamEND/endwiki
+https://github.com/Team-Union/unionwiki
 
 # The End
 
